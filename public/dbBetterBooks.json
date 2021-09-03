@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "key": 1,
+            "name": "Бизнес-коучинг",
+            "author": "Марк Мэнсон",
+            "rating": "5",
+            "img": "../../src/assets/img/pof.jpg"
+        },
+        {
+            "key": 2,
+            "name": "Новый год",
+            "author": "Стивен Кинг",
+            "rating": "5",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 3,
+            "name": "Скрытый смысл",
+            "author": "Анджей Сапковский",
+            "rating": "4",
+            "img": "../../src/assets/img/witcher.jpg"
+        },
+        {
+            "key": 4,
+            "name": "Самооценка",
+            "author": "Стивен Кинг",
+            "rating": "4",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 5,
+            "name": "Руководство жизни",
+            "author": "Эрих Мария Ремарк",
+            "rating": "3",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 6,
+            "name": "Стратегия",
+            "author": "Анджей Сапковский",
+            "rating": "5",
+            "img": "../../src/assets/img/witcher.jpg"
+        },
+        {
+            "key": 7,
+            "name": "Управление проектами",
+            "author": "Стивен Кинг",
+            "rating": "2",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 8,
+            "name": "Новый роман",
+            "author": "Эрих Мария Ремарк",
+            "rating": "4",
+            "img": "../../src/assets/img/it.jpeg"
+        }
+    ]
+}

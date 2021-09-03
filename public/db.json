@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "key": 1,
+            "name": "Тонкое исскуство пофигизма",
+            "author": "Марк Мэнсон",
+            "rating": "5",
+            "img": "../../src/assets/img/pof.jpg"
+        },
+        {
+            "key": 2,
+            "name": "Оно",
+            "author": "Стивен Кинг",
+            "rating": "5",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 3,
+            "name": "Ведьмак",
+            "author": "Анджей Сапковский",
+            "rating": "4",
+            "img": "../../src/assets/img/witcher.jpg"
+        },
+        {
+            "key": 4,
+            "name": "Кладбище домашних животных",
+            "author": "Стивен Кинг",
+            "rating": "4",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 5,
+            "name": "Искра жизни",
+            "author": "Эрих Мария Ремарк",
+            "rating": "3",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 6,
+            "name": "Ведьмак 3",
+            "author": "Анджей Сапковский",
+            "rating": "5",
+            "img": "../../src/assets/img/witcher.jpg"
+        },
+        {
+            "key": 7,
+            "name": "Хочу и буду",
+            "author": "Стивен Кинг",
+            "rating": "2",
+            "img": "../../src/assets/img/it.jpeg"
+        },
+        {
+            "key": 8,
+            "name": "Новая жизнь",
+            "author": "Эрих Мария Ремарк",
+            "rating": "4",
+            "img": "../../src/assets/img/it.jpeg"
+        }
+    ]
+}

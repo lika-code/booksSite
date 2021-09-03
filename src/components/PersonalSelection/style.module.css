@@ -1,0 +1,46 @@
+.containerPersSel{
+    margin: 0 auto;
+    max-width: 1180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+h3 {
+    text-align: inherit;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectionIntro{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.booksSelection{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+}
+

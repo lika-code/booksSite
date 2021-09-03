@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainWrapper{
+    text-align: left;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.advantagesWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 17px;
+    padding-bottom: 32px;
+}
+
+.rotateBlock{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    min-height: 700px;
+ 
+}
+
+.background{
+    transform: rotate(-2deg);
+    position: absolute;
+    background-color: rgb(255, 212, 81) ;
+    z-index: -10;
+    width: 110%;
+    height: 100%;
+    left: -20;
+    
+}
+
+.iconsWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.screenWrapper h1{
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+.screenWrapper{
+    padding: 0 12px;
+}
+
+.buttonsList{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.screenBtn{
+    max-width: 172px;
+    padding: 12px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(rgb(255, 129, 0), rgb(228, 75, 3));
+    border: 0;
+    border-radius: 12px;
+    transition: none 0s ease 0s;
+    margin-right: 20px;
+}
+
+.screenBtn:hover{
+    border: 0;
+    background: linear-gradient(rgb(250, 169, 88), rgb(245, 171, 52));
+
+}
+
+.iconsList li {
+    height: 48px;
+    display: flex;
+}
+
+.iconStore {
+    width: 108px;
+    height: 32px;
+    padding-right: 10px;
+}
+
+.wrapperImg{
+    max-width: 50%;
+    padding: 0 12px;
+}
+
+.screenImg{
+    width: 466px;
+    height: 335px;
+}

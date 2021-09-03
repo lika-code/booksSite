@@ -1,0 +1,65 @@
+
+
+h3 {
+    text-align: inherit;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectLink{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnMore{
+    border: 0;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    cursor: pointer;
+    color: rgb(179, 77, 0);
+}
+
+.linkIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.selectDescription{
+    font-weight: 400;
+    color: rgba(0,0,0,.65);
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.selectionIntro{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.booksSelection{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+}
+
