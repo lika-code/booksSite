@@ -7,9 +7,8 @@ import Item from "../Item/Item";
 // import arrow from "../../assets/img/right-arrow.svg";
 
 function BetterSelections({ items }) {
-    const openBookPage = () => {
-        console.log(1);
-        return <BookPage />;
+    const openBookPage = (book_id) => {
+        return <BookPage book_id={book_id}/>;
     };
 
     return (
@@ -39,10 +38,10 @@ function BetterSelections({ items }) {
                     {items.map((obj) => (
                             <Item
                                 key={obj.key}
+                                id={obj.key}
                                 name={obj.name}
                                 author={obj.author}
                                 img={obj.img}
-                                onBookClick={openBookPage}
                             />
                     ))}
                 </div>

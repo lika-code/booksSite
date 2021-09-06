@@ -4,15 +4,23 @@ import { Link } from "react-router-dom";
 import styles from "../Item/style.module.css";
 import Raiting from "../Raiting/Raiting";
 
-function Item({ name, author, img, onBookClick }) {
+function Item({ id, name, author, img}) {
     return (
-        <Link to="/book">
-            <div className={styles.book} onClick={onBookClick}>
+        <Link to={{
+            pathname: '/book',
+            state: {
+                'id':id,
+                'name':name,
+                'author':author,
+                'img':img
+            },
+          }}>
+            <div className={styles.book}>
                 <div className={styles.blockImg}>
                     <img src={img} className={styles.bookImg} alt="book-img" />
                 </div>
                 <div>
-                    {/* {rating} */}
+                    
                     <Raiting />
                 </div>
                 <p className={styles.bookNameTitle}>{name}</p>

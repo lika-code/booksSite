@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
+import {useLocation} from 'react-router-dom';
 import witcher from "../../assets/img/witcher.jpg";
 import styles from "../BookPage/style.module.css";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 
-function BookPage() {
+function BookPage({ match }) {
     const [crumbs, setCrumbs] = useState([
         "MyBook — Электронная библиотека",
         "Библиотека",
@@ -12,6 +12,7 @@ function BookPage() {
         "Название книги",
     ]);
 
+    const { state } = useLocation();
     const selected = (crumb) => {
         console.log(crumb);
     };
@@ -28,7 +29,7 @@ function BookPage() {
             <div className={styles.mainContainer}>
                 <div className={styles.imgBlur}>
                     <img
-                        src={witcher}
+                        src={state['img']}
                         className={styles.imgBookBlur}
                         alt="book"
                     />
@@ -38,8 +39,8 @@ function BookPage() {
                         <li>Премиум</li>
                         <li>4,3 (13 500 оценок)</li>
                     </ul>
-                    <h1> Witcher </h1>
-                    <p>Анджей Сапковский</p>
+                    <h1> {state['name']} </h1>
+                    <p>{state['author']}</p>
                     <div>
                         <p>2 485 печатных страниц</p>
                         <p>2013 год</p>
