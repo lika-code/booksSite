@@ -2,59 +2,59 @@
     "items": [
         {
             "key": 1,
-            "name": "Бизнес-коучинг",
-            "author": "Марк Мэнсон",
+            "name": "Богатый папа - бедный папа",
+            "author": "Роберт Кийосаки",
             "rating": "5",
-            "img": "../../src/assets/img/pof.jpg"
+            "img": "https://balka-book.com/files/2017/08_30/15_42/u_files_store_6_81116.jpg"
         },
         {
             "key": 2,
-            "name": "Новый год",
-            "author": "Стивен Кинг",
+            "name": "Гарри Поттер",
+            "author": "Джоан Кэтлин Роулинг",
             "rating": "5",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2017/01_18/13_45/u_files_store_1_33067.jpg"
         },
         {
             "key": 3,
-            "name": "Скрытый смысл",
-            "author": "Анджей Сапковский",
+            "name": "Герцог и я",
+            "author": "Джулия Куин",
             "rating": "4",
-            "img": "../../src/assets/img/witcher.jpg"
+            "img": "https://bizlit.com.ua/image/cache/data/images10/kniga-gercog-i-ja-600x800.jpg"
         },
         {
             "key": 4,
-            "name": "Самооценка",
-            "author": "Стивен Кинг",
+            "name": "Уверенность в себе",
+            "author": "Томас Чаморро-Премузик",
             "rating": "4",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2020/08_20/15_19/u_files_store_25_152680.jpg"
         },
         {
             "key": 5,
-            "name": "Руководство жизни",
+            "name": "Три товарища",
             "author": "Эрих Мария Ремарк",
             "rating": "3",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2018/12_06/14_51/u_files_store_3_1272521.jpg"
         },
         {
             "key": 6,
-            "name": "Стратегия",
-            "author": "Анджей Сапковский",
+            "name": "Выйди из зоны комфорта.",
+            "author": "Брайан Трейси",
             "rating": "5",
-            "img": "../../src/assets/img/witcher.jpg"
+            "img": "https://balka-book.com/files/2019/09_30/10_17/u_files_store_3_2098424.jpg"
         },
         {
             "key": 7,
-            "name": "Управление проектами",
-            "author": "Стивен Кинг",
+            "name": "Не ной",
+            "author": "Джен Синсеро",
             "rating": "2",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2019/03_07/13_25/u_files_store_3_1577587.jpg"
         },
         {
             "key": 8,
-            "name": "Новый роман",
-            "author": "Эрих Мария Ремарк",
+            "name": "Важные годы",
+            "author": "Мэг Джей",
             "rating": "4",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2017/05_08/11_12/u_files_store_3_286675.png"
         }
     ]
 }

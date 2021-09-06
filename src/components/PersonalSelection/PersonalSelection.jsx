@@ -12,7 +12,7 @@ function PersonalSelection({ items }) {
                 <h3>Ваша персональная подборка</h3>
                 <div className={styles.booksSelection}>
                     {
-                        items.map(obj => <Item key={obj.key} name={obj.name} author={obj.author} rating={obj.rating} img={obj.img}/>)
+                        items.map(obj => <Item key={obj.key} name={obj.name} author={obj.author} img={obj.img}/>)
                     }
                 </div>
             </div>

@@ -9,12 +9,12 @@ import BuyingPage from "./pages/BuyingPage/BuyingPage";
 import Footer from "./components/Footer/Footer";
 import WhatNewPage from "./pages/WhatNewPage/WhatNewPage";
 import HomePage from "./pages/HomePage/HomePage";
+import BookPage from "./pages/BookPage/BookPage";
 
 function App() {
     const [categProjectList, setCategProjectList] = useState([]);
     const [subscriptionsList, setSubscriptionsList] = useState([]);
-    const [anotherProjectList, setAnotherProjectList] = useState([]);
-
+    const [anotherProjectList, setAnotherProjectList] = useState([]);     
 
     useEffect(() => {
         fetch("http://localhost:3000/categoriesFooter.json").then((resp) => {
@@ -35,6 +35,7 @@ function App() {
             <div className="wrapper">
                 <Header />
                 <div className="content">
+                    
                     <Route path="/" exact>
                         <HomePage/>
                     </Route>
@@ -43,6 +44,9 @@ function App() {
                     </Route>
                     <Route path="/buying" exact>
                         <BuyingPage />
+                    </Route>
+                    <Route path='/book' exact>
+                        <BookPage/>
                     </Route>
                 </div>
             </div>

@@ -1,18 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import bookImgW from "../../assets/img/witcher.jpg";
-import styles from '../Item/style.module.css'
+import styles from "../Item/style.module.css";
+import Raiting from "../Raiting/Raiting";
 
-function Item({name, author, rating, img}) {
+function Item({ name, author, img, onBookClick }) {
     return (
-        <div className={styles.book}>
-            <div className={styles.blockImg}>
-                <img src={bookImgW} className={styles.bookImg} alt="book-img" />
+        <Link to="/book">
+            <div className={styles.book} onClick={onBookClick}>
+                <div className={styles.blockImg}>
+                    <img src={img} className={styles.bookImg} alt="book-img" />
+                </div>
+                <div>
+                    {/* {rating} */}
+                    <Raiting />
+                </div>
+                <p className={styles.bookNameTitle}>{name}</p>
+                <p className={styles.bookAuthorTitle}>{author}</p>
             </div>
-            <p>{rating}</p>
-            <p>{name}</p>
-            <p>{author}</p>
-        </div>
+        </Link>
     );
 }
 

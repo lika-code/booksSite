@@ -5,56 +5,56 @@
             "name": "Тонкое исскуство пофигизма",
             "author": "Марк Мэнсон",
             "rating": "5",
-            "img": "../../src/assets/img/pof.jpg"
+            "img": "https://balka-book.com/files/2017/12_25/18_21/u_files_store_3_564943.jpg"
         },
         {
             "key": 2,
             "name": "Оно",
             "author": "Стивен Кинг",
             "rating": "5",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2018/12_12/10_33/u_files_store_3_1291284.jpg"
         },
         {
             "key": 3,
             "name": "Ведьмак",
             "author": "Анджей Сапковский",
             "rating": "4",
-            "img": "../../src/assets/img/witcher.jpg"
+            "img": "https://balka-book.com/files/2017/10_23/11_15/u_files_store_3_439987.jpg"
         },
         {
             "key": 4,
             "name": "Кладбище домашних животных",
             "author": "Стивен Кинг",
             "rating": "4",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2018/11_13/15_11/u_files_store_3_1214588.jpg"
         },
         {
             "key": 5,
             "name": "Искра жизни",
             "author": "Эрих Мария Ремарк",
             "rating": "3",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2018/08_18/11_13/u_files_store_3_1065991.jpg"
         },
         {
             "key": 6,
             "name": "Ведьмак 3",
             "author": "Анджей Сапковский",
             "rating": "5",
-            "img": "../../src/assets/img/witcher.jpg"
+            "img": "https://balka-book.com/files/2017/10_23/11_15/u_files_store_3_439987.jpg"
         },
         {
             "key": 7,
-            "name": "Хочу и буду",
+            "name": "Противостояние",
             "author": "Стивен Кинг",
             "rating": "2",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2021/03_26/22_36/u_files_store_29_86772.jpg"
         },
         {
             "key": 8,
-            "name": "Новая жизнь",
-            "author": "Эрих Мария Ремарк",
+            "name": "Темная башня",
+            "author": "Стивен Кинг",
             "rating": "4",
-            "img": "../../src/assets/img/it.jpeg"
+            "img": "https://balka-book.com/files/2020/05_08/17_09/u_files_store_6_2425.jpg"
         }
     ]
 }

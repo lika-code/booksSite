@@ -14,13 +14,13 @@ function Header() {
                         <nav>
                             <ul>
                                 <li className={styles.navLink}>
-                                <Link to="/">
-                                <img
-                                    className={styles.logoHeader}
-                                    src={logo}
-                                    alt="logo"
-                                />
-                            </Link>
+                                    <Link to="/">
+                                        <img
+                                            className={styles.logoHeader}
+                                            src={logo}
+                                            alt="logo"
+                                        />
+                                    </Link>
                                 </li>
                                 <li className={styles.navLink}>
                                     <input
@@ -29,16 +29,32 @@ function Header() {
                                         placeholder="Книга или автор"
                                     />
                                 </li>
-                                <li className={styles.navLink + '' + styles.textLink}>
+                                <li
+                                    className={
+                                        styles.navLink + "" + styles.textLink
+                                    }
+                                >
                                     <Link to="/dashboard">Что выбрать</Link>
                                 </li>
-                                <li className={styles.navLink + '' + styles.textLink}>
+                                <li
+                                    className={
+                                        styles.navLink + "" + styles.textLink
+                                    }
+                                >
                                     <Link to="">Библиотека</Link>
                                 </li>
-                                <li className={styles.navLink + '' + styles.textLink}>
+                                <li
+                                    className={
+                                        styles.navLink + "" + styles.textLink
+                                    }
+                                >
                                     <Link to="">Подписка</Link>
                                 </li>
-                                <li className={styles.navLink + '' + styles.textLink}>
+                                <li
+                                    className={
+                                        styles.navLink + "" + styles.textLink
+                                    }
+                                >
                                     <Link to="">Войти</Link>
                                 </li>
                             </ul>

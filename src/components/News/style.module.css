@@ -27,7 +27,6 @@
 
 .imgNews {
     max-width: 360px;
-    min-width: 320px;
     display: flex;
     -webkit-box-flex: 2;
     flex-grow: 2;

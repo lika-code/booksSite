@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BookPage from "../../pages/BookPage/BookPage";
 
 import styles from "../BetterSelections/style.module.css";
 import Item from "../Item/Item";
-import arrow from "../../assets/img/right-arrow.svg";
-import puzzle from "../../assets/img/puzzle.svg";
+// import arrow from "../../assets/img/right-arrow.svg";
 
 function BetterSelections({ items }) {
+    const openBookPage = () => {
+        console.log(1);
+        return <BookPage />;
+    };
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.selectionIntro}>
@@ -32,13 +37,13 @@ function BetterSelections({ items }) {
                 </div>
                 <div className={styles.booksSelection}>
                     {items.map((obj) => (
-                        <Item
-                            key={obj.key}
-                            name={obj.name}
-                            author={obj.author}
-                            rating={obj.rating}
-                            img={obj.img}
-                        />
+                            <Item
+                                key={obj.key}
+                                name={obj.name}
+                                author={obj.author}
+                                img={obj.img}
+                                onBookClick={openBookPage}
+                            />
                     ))}
                 </div>
             </div>

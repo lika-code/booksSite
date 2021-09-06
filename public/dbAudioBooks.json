@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "key": 1,
+            "name": "Подсознание может всё!",
+            "author": "Джон Кехо",
+            "rating": "5",
+            "img": "https://i3.mybook.io/p/x378/book_covers/c4/3b/c43bc34d-05ad-4e1e-8553-9aac5873de3f.jpg"
+        },
+        {
+            "key": 2,
+            "name": "Тонкое исскуство пофигизма",
+            "author": "Марк Мэнсон",
+            "rating": "5",
+            "img": "https://balka-book.com/files/2017/12_25/18_21/u_files_store_3_564943.jpg"
+        },
+        {
+            "key": 3,
+            "name": "Не ной",
+            "author": "Джен Синсеро",
+            "rating": "2",
+            "img": "https://i3.mybook.io/p/x378/book_covers/9c/0a/9c0a86ee-2cc8-44a1-a4ba-370abe4bca26.jpg"
+        },
+        {
+            "key": 4,
+            "name": "Богатый папа - бедный папа",
+            "author": "Роберт Кийосаки",
+            "rating": "5",
+            "img": "https://i1.mybook.io/p/x378/book_covers/57/7d/577df65d-f470-4ce1-952c-bc405de1053d.jpg"
+        },
+        {
+            "key": 5,
+            "name": "7 навыков высокоэффективных людей.",
+            "author": "Стивен Кови",
+            "rating": "3",
+            "img": "https://i2.mybook.io/p/x378/book_covers/25/7a/257a9763-1345-43ca-ab7c-77961ba1e915.jpg"
+        }
+    ]
+}

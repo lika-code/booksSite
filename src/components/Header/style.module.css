@@ -39,16 +39,21 @@ ul li a{
     font-weight: 600;
 }
 
-input {
+.headerSearch {
     width: 100%;
     height: 40px;
     padding: 4px 12px;
     text-align: center;
     font-size: 16px;
     border: 1px solid rgb(217, 217, 217);
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 4px 12px;
     color: rgba(0, 0, 0, 0.45);
+}
+
+.headerSearch:focus {
+    border: 1px solid rgb(250, 195, 14);
+    outline: none;
 }
 
 .logoHeader {
