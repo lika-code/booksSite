@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import styles from "../Item/style.module.css";
 import Raiting from "../Raiting/Raiting";
@@ -7,7 +7,7 @@ import Raiting from "../Raiting/Raiting";
 function Item({ id, name, author, img}) {
     return (
         <Link to={{
-            pathname: '/book',
+            pathname: "/book",
             state: {
                 'id':id,
                 'name':name,
@@ -15,6 +15,9 @@ function Item({ id, name, author, img}) {
                 'img':img
             },
           }}>
+
+        {/* <NavLink to={`/book/${id}`}> */}
+        
             <div className={styles.book}>
                 <div className={styles.blockImg}>
                     <img src={img} className={styles.bookImg} alt="book-img" />
@@ -27,6 +30,7 @@ function Item({ id, name, author, img}) {
                 <p className={styles.bookAuthorTitle}>{author}</p>
             </div>
         </Link>
+        
     );
 }
 

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux'
 
 import styles from "../HomePage/style.module.css";
 import appStoreIcon from "../../assets/img/as.png";
@@ -9,22 +10,22 @@ import HomeIconsBlock from "./HomeIconsBlock/HomeIconsBlock";
 import BetterSelections from "../../components/BetterSelections/BetterSelections";
 import AudioBooksSelection from "../../components/AudioBooksSelection/AudioBooksSelection";
 
+import { getBooks } from '../../redux/actions/books'
+import { getAudioBooks } from '../../redux/actions/audioBooks'
+
+
 function HomePage() {
-    const [betterSelection, setBetterSelection] = useState([]);
-    const [audiobooksSelection, setAudiobooksSelection] = useState([]);
-
-
-    useEffect(() => {
-        fetch("http://localhost:3000/dbBetterBooks.json").then((resp) => {
-            resp.json().then((json) => setBetterSelection(json.items));
-        });
-    }, []);
+    const dispatch = useDispatch();
+    const books = useSelector(state => state.books.items)
+    const audioBooks = useSelector(state => state.audioBooks.items)
 
     useEffect(() => {
-        fetch("http://localhost:3000/dbAudioBooks.json").then((resp) => {
-            resp.json().then((json) => setAudiobooksSelection(json.items));
-        });
-    }, []);
+        dispatch(getBooks())
+    }, [])
+
+    useEffect(() => {
+        dispatch(getAudioBooks())
+    }, [])
 
     return (
         <div className={styles.container}>
@@ -75,13 +76,13 @@ function HomePage() {
                     <HomeIconsBlock />
                 </div>
                 <div>
-                    <BetterSelections items={betterSelection}/>
+                    <BetterSelections items={books}/>
                 </div>
                 <div>
-                    <BetterSelections items={betterSelection}/>
+                    <BetterSelections items={books}/>
                 </div>
                 <div>
-                    <AudioBooksSelection items={audiobooksSelection}/>
+                    <AudioBooksSelection items={audioBooks}/>
                 </div>
             </div>
         </div>

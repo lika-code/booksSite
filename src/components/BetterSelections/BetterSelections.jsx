@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import BookPage from "../../pages/BookPage/BookPage";
 
 import styles from "../BetterSelections/style.module.css";
@@ -7,9 +8,6 @@ import Item from "../Item/Item";
 // import arrow from "../../assets/img/right-arrow.svg";
 
 function BetterSelections({ items }) {
-    const openBookPage = (book_id) => {
-        return <BookPage book_id={book_id}/>;
-    };
 
     return (
         <div className={styles.wrapper}>
@@ -36,14 +34,17 @@ function BetterSelections({ items }) {
                 </div>
                 <div className={styles.booksSelection}>
                     {items.map((obj) => (
+                        // <Link to={`/book/${obj.key}`}>
                             <Item
                                 key={obj.key}
                                 id={obj.key}
                                 name={obj.name}
                                 author={obj.author}
                                 img={obj.img}
-                            />
-                    ))}
+                            >
+                            </Item>
+                        // </Link>
+                     ))}
                 </div>
             </div>
         </div>

@@ -1,11 +1,11 @@
-import React, {  useState } from "react";
+import React, { useEffect, useState, useParams } from "react";
 import {useLocation} from 'react-router-dom';
 
 import styles from "../BookPage/style.module.css";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 
-function BookPage(props) { 
-    const book = props.book 
+function AudioBookPage(props) { 
+    const audioBook = props.audioBook 
 
     const [crumbs, setCrumbs] = useState([
         "MyBook — Электронная библиотека",
@@ -13,23 +13,6 @@ function BookPage(props) {
         "Автор",
         "Название книги",
     ]);
-
-    
-    // const { params } = match;
-    // const { key } = params;
-
-
-    // const [books, setBooks] = useState([]);
-
-    // useEffect(() => {
-    //     fetch(`http://localhost:3000/dbBetterBooks.json`).then((resp) => {
-    //         resp.json().then((json) => setBooks(json.items));
-    //     });
-    // })
-
-    // const chosenBook = books && books.filter(el=> el.key===key)
-
-    // console.log(chosenBook)
 
     const { state } = useLocation();
 
@@ -78,4 +61,4 @@ function BookPage(props) {
     );
 }
 
-export default BookPage;
+export default AudioBookPage;
