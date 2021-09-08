@@ -1,12 +1,14 @@
 import React, {  useState } from "react";
-import {useLocation} from 'react-router-dom';
+import {useLocation, useParams} from 'react-router-dom';
 
 import styles from "../BookPage/style.module.css";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 
 function BookPage(props) { 
     const book = props.book 
-
+    const params = useParams();
+    const id = params?.id;
+    console.log(params);
     const [crumbs, setCrumbs] = useState([
         "MyBook — Электронная библиотека",
         "Библиотека",

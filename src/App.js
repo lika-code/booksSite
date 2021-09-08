@@ -34,6 +34,13 @@ function App() {
         });
     }, []);
 
+    const routes = {
+        catalog: '/catalog',
+        dashboard: '/dashboard',
+        buying: '/buying',
+        book: '/book'
+    }
+
     return (
         <>
             <div className="wrapper">
@@ -41,7 +48,7 @@ function App() {
                 <div className="content">
                     
                     <Switch>
-                        <Route path='/catalog'>
+                        <Route path={routes.catalog}>
                             <Catalog/>
                         </Route>
                         <Route path="/" exact>
@@ -53,7 +60,7 @@ function App() {
                         <Route path="/buying" exact>
                             <BuyingPage />
                         </Route>
-                        <Route path="/book" exact>
+                        <Route path={`${routes.book}/:id`} exact>
                             <BookPage />
                         </Route>
                         <Route path="book/:id">

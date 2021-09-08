@@ -7,7 +7,7 @@ import Raiting from "../Raiting/Raiting";
 function Item({ id, name, author, img}) {
     return (
         <Link to={{
-            pathname: "/book",
+            pathname: `/book/${id}`,
             state: {
                 'id':id,
                 'name':name,
