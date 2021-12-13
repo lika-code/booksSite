@@ -17,7 +17,6 @@ function NewsList({ itemsList }) {
                 {
                     itemsList.map(obj => <News key={obj.key} name={obj.name} imgUrl={obj.img} desc={obj.desc}/>)
                 }
-                <button className={styles.buttonShowMore}>Показать ещё</button>
             </div>
         </div>
     )

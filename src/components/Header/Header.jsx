@@ -34,28 +34,28 @@ function Header() {
                                         styles.navLink + "" + styles.textLink
                                     }
                                 >
-                                    <Link to="/dashboard">Что выбрать</Link>
+                                    <Link to="/dashboard">Что нового</Link>
                                 </li>
                                 <li
                                     className={
                                         styles.navLink + "" + styles.textLink
                                     }
                                 >
-                                    <Link to="">Библиотека</Link>
+                                    <Link to="/">Библиотека</Link>
                                 </li>
                                 <li
                                     className={
                                         styles.navLink + "" + styles.textLink
                                     }
                                 >
-                                    <Link to="">Подписка</Link>
+                                    <Link to="/buying">Подписка</Link>
                                 </li>
                                 <li
                                     className={
                                         styles.navLink + "" + styles.textLink
                                     }
                                 >
-                                    <Link to="">Войти</Link>
+                                    <Link to="/login">Войти</Link>
                                 </li>
                             </ul>
                         </nav>

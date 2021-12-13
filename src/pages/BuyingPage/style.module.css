@@ -1,35 +1,90 @@
-.container{
-    margin: 0 auto;
-    max-width: 1180px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.wrapper{
-    width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
 
-.container p{
-    text-align: center;
+.wrapper {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p {
+  text-align: center;
+  font-size: 16px;
+  color: #262626;
+  font-weight: 500;
+}
+
+.heading {
+  text-align: center;
+  font-size: 46px;
+  line-height: 54px;
+  padding: 24px 16px;
+}
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.fieldInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.formInput {
+  width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #eee;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.textArea{
+    padding: 10px;
+    border: 2px solid #eee;
+}
+
+.screenBtn{
+    width: 200px;
+    margin-top: 20px;
+    padding: 12px 10px;
     font-size: 16px;
-    color: #262626;
-    font-weight: 500;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(rgb(255, 129, 0), rgb(228, 75, 3));
+    border: 0;
+    border-radius: 12px;
+    transition: none 0s ease 0s;
+    margin-right: 20px;
 }
 
-.heading{
-    text-align: center;
-    font-size: 46px;
-    line-height: 54px;
-    padding: 24px 16px;
+.screenBtn:hover{
+    border: 0;
+    background: linear-gradient(rgb(250, 169, 88), rgb(245, 171, 52));
+
 }

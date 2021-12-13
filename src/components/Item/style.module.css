@@ -1,6 +1,15 @@
+*{
+    box-sizing: border-box;
+}
 .book {
     width: 115px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.blockImg:hover{
+  width: 130px;
+  height: 180px;
 }
 
 .book:first-child {

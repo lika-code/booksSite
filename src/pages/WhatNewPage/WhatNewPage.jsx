@@ -22,7 +22,7 @@ function WhatNewPage() {
         <div>
             <div className={styles.container}>
                 <div className={styles.wrapper}>
-                    <h1>Что выбрать</h1>
+                    <h1>Что нового</h1>
                     <PersonalSelection items={booksSelection} />
                     <SaleBlock />
                     <NewsList itemsList={newsList} />

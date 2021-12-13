@@ -11,16 +11,6 @@ function AudioBooksSelection({items}) {
                 <div className={styles.selectionIntro}>
                     <div className={styles.selectLink}>
                         <h3>Теперь и аудиокниги!</h3>
-                        <Link to="/" className={styles.btnMore}>
-                            Еще
-                            {/* <span>
-                                <img
-                                    scr={puzzle}
-                                    className={styles.linkIcon}
-                                    alt="icon"
-                                />
-                            </span> */}
-                        </Link>
                     </div>
                     <div>
                         <p className={styles.selectDescription}>

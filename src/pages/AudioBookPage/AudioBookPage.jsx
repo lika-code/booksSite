@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {useLocation} from 'react-router-dom';
-import witcher from "../../assets/img/witcher.jpg";
-import styles from "../BookPage/style.module.css";
+import styles from "../AudioBookPage/style.module.css";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 
-function BookPage({}) {
+function AudioBookPage() {
     const [crumbs, setCrumbs] = useState([
         "MyBook — Электронная библиотека",
         "Библиотека",
@@ -30,12 +29,12 @@ function BookPage({}) {
                 <div className={styles.imgBlur}>
                     <img
                         src={state['img']}
-                        className={styles.imgBookBlur}
+                        className={styles.imgAudioBookBlur}
                         alt="book"
                     />
                     <img
                         src={state['img']}
-                        className={styles.imgBook}
+                        className={styles.imgAudioBook}
                         alt="book"
                     />
                 </div>
@@ -50,7 +49,6 @@ function BookPage({}) {
                     <h1 className={styles.bookNameTitle}>{state['name']} </h1>
                     <p className={styles.bookAuthorTitle}>{state['author']}</p>
                     <ul className={styles.bookInfoList}>
-                        <li className={styles.bookInfoListItem}>2 485 печатных страниц</li>
                         <li className={styles.bookInfoListItem}>2013 год</li>
                         <li className={styles.bookInfoListItem}>16+</li>
                     </ul>
@@ -66,4 +64,4 @@ function BookPage({}) {
     );
 }
 
-export default BookPage;
+export default AudioBookPage;

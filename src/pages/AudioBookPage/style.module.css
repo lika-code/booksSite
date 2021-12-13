@@ -34,7 +34,7 @@
 .imgBlur{
     position: relative;
 }
-.imgBookBlur{
+.imgAudioBookBlur{
     width: 330px;
     height: 100%;
     filter: blur(24px);
@@ -42,12 +42,12 @@
     overflow: hidden;
 }
 
-.imgBook{
-    width: 236px;
-    height: 351px;
+.imgAudioBook{
+    width: 268px;
+    height: 268px;
     position: absolute;
-    left: 90px;
-    top: 10px;
+    top: 20px;
+    left: 60px;
     margin-left: 16px;
     border: 1px solid #fff;
     border-radius: 10px;

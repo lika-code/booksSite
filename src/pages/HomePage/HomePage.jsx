@@ -78,9 +78,6 @@ function HomePage() {
                     <BetterSelections items={betterSelection}/>
                 </div>
                 <div>
-                    <BetterSelections items={betterSelection}/>
-                </div>
-                <div>
                     <AudioBooksSelection items={audiobooksSelection}/>
                 </div>
             </div>
