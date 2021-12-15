@@ -13,7 +13,6 @@ function AudioBookPage() {
 
     const { state } = useLocation();
     const selected = (crumb) => {
-        console.log(crumb);
     };
 
     return (

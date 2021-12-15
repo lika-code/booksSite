@@ -11,19 +11,16 @@
     padding-right: 0;
 }
 
-.blockImg {
-    width: 115px;
-    height: 176px;
-}
 
 .audiobookImg {
     width: 174px;
     height: 176px;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 .audiobookImg:hover{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
 }
 
 .bookNameTitle {

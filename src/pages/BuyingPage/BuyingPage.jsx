@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../BuyingPage/style.module.css";
 
-function BuyingPage(props) {
+function BuyingPage() {
   const [formValid, setFormValid] = useState(false);
 
   const [valueName, setValueName] = useState("");
@@ -16,7 +17,6 @@ function BuyingPage(props) {
   useEffect(() => {
     if (emailError || nameError) {
       setFormValid(false);
-      console.log(nameError, emailError);
     } else {
       setFormValid(true);
     }
@@ -44,14 +44,27 @@ function BuyingPage(props) {
   };
 
   const handleChangeText = (e) => {
-      setValueText(e.target.value);
-  }
+    setValueText(e.target.value);
+  };
 
   const handleSubmitBtn = (event) => {
     event.preventDefault();
+
     setValueName("");
     setValueEmail("");
     setValueText("");
+  };
+
+  const blurHandler = (e) => {
+    switch (e.target.name) {
+      case "email":
+        setEmailDirty(true);
+        break;
+      case "name":
+        setNameDirty(true);
+        break;
+      default:
+    }
   };
 
   return (
@@ -73,10 +86,11 @@ function BuyingPage(props) {
               className={styles.formInput}
               placeholder="Имя"
               value={valueName}
+              onBlur={(e) => blurHandler(e)}
               onChange={(e) => handleChangeName(e)}
             />
           </div>
-          <div className="inputErrorText">
+          <div className={styles.inputErrorText}>
             {nameError && nameDirty && <div>{nameError}</div>}
           </div>
 
@@ -88,17 +102,17 @@ function BuyingPage(props) {
               className={styles.formInput}
               placeholder="Email"
               value={valueEmail}
+              onBlur={(e) => blurHandler(e)}
               onChange={(e) => handleChangeEmail(e)}
             />
           </div>
-          <div className="inputErrorText">
+          <div className={styles.inputErrorText}>
             {emailError && emailDirty && <div>{emailError}</div>}
           </div>
           <textarea
             className={styles.textArea}
             value={valueText}
             onChange={(e) => handleChangeText(e)}
-
             cols="32"
             rows="10"
             placeholder="Напишите ваше пожелание для получателя"
@@ -109,7 +123,12 @@ function BuyingPage(props) {
             onClick={handleSubmitBtn}
             disabled={!formValid}
           >
-            Отправить подарок
+            <Link
+              className={styles.btnSubmit}
+              to={{ pathname: "/thankYouPage", state: { 'email': valueEmail, 'name': valueName } }}
+            >
+              Отправить подарок
+            </Link>
           </button>
         </form>
       </div>

@@ -16,6 +16,10 @@
     padding-bottom: 32px;
 }
 
+.linkFromBtn{
+    color: #fff;
+}
+
 .advantagesWrapper{
     width: 100%;
     display: flex;
@@ -25,11 +29,10 @@
     padding-bottom: 32px;
 }
 
-.rotateBlock{
+.mainBlock{
     position: relative;
     margin-top: 50px;
     width: 100%;
-    min-height: 700px;
 }
 
 .background{
@@ -60,7 +63,7 @@
 }
 
 .screenBtn{
-    max-width: 172px;
+    max-width: 180px;
     padding: 12px 10px;
     font-size: 16px;
     font-weight: 600;

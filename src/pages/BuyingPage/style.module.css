@@ -57,7 +57,7 @@
 
 .formInput {
   width: 300px;
-  margin: 10px 0;
+  margin: 10px 0 0;
   padding: 10px;
   border: 2px solid #eee;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
@@ -87,4 +87,14 @@
     border: 0;
     background: linear-gradient(rgb(250, 169, 88), rgb(245, 171, 52));
 
+}
+
+.btnSubmit{
+  color: #fff;
+}
+.inputErrorText{
+  font-size: 12px;
+  text-align: left;
+  color: red;
+  margin-bottom: 10px;
 }

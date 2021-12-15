@@ -6,65 +6,45 @@ import CategoryList from "../CategoryList/CategoryList";
 import styles from "../Header/style.module.css";
 
 function Header() {
-    return (
-        <>
-            <header>
-                <div className={styles.container}>
-                    <div className={styles.wrapper}>
-                        <nav>
-                            <ul>
-                                <li className={styles.navLink}>
-                                    <Link to="/">
-                                        <img
-                                            className={styles.logoHeader}
-                                            src={logo}
-                                            alt="logo"
-                                        />
-                                    </Link>
-                                </li>
-                                <li className={styles.navLink}>
-                                    <input
-                                        className={styles.headerSearch}
-                                        type="text"
-                                        placeholder="Книга или автор"
-                                    />
-                                </li>
-                                <li
-                                    className={
-                                        styles.navLink + "" + styles.textLink
-                                    }
-                                >
-                                    <Link to="/dashboard">Что нового</Link>
-                                </li>
-                                <li
-                                    className={
-                                        styles.navLink + "" + styles.textLink
-                                    }
-                                >
-                                    <Link to="/">Библиотека</Link>
-                                </li>
-                                <li
-                                    className={
-                                        styles.navLink + "" + styles.textLink
-                                    }
-                                >
-                                    <Link to="/buying">Подписка</Link>
-                                </li>
-                                <li
-                                    className={
-                                        styles.navLink + "" + styles.textLink
-                                    }
-                                >
-                                    <Link to="/login">Войти</Link>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <CategoryList />
-                </div>
-            </header>
-        </>
-    );
+  return (
+    <>
+      <header>
+        <div className={styles.container}>
+          <div className={styles.wrapper}>
+            <nav>
+              <ul className={styles.menuItems}>
+                <li className={styles.navLinkMenu}>
+                  <Link to="/">
+                    <img className={styles.logoHeader} src={logo} alt="logo" />
+                  </Link>
+                </li>
+                <li className={styles.navLinkMenu}>
+                  <input
+                    className={styles.headerSearch}
+                    type="text"
+                    placeholder="Книга или автор"
+                  />
+                </li>
+                <li className={styles.navLinkMenu}>
+                  <Link to="/dashboard">Что нового</Link>
+                </li>
+                <li className={styles.navLinkMenu}>
+                  <Link to="/library">Библиотека</Link>
+                </li>
+                <li className={styles.navLinkMenu}>
+                  <Link to="/buying">Подарить подписку</Link>
+                </li>
+                <li className={styles.navLinkMenu}>
+                  <Link to="/login">Войти</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <CategoryList />
+        </div>
+      </header>
+    </>
+  );
 }
 
 export default Header;

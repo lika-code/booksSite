@@ -23,7 +23,6 @@ h3 {
 
 .selectLink{
     display: flex;
-    justify-content: space-between;
 }
 
 .btnMore{
@@ -56,6 +55,7 @@ h3 {
     padding: 16px;
     border-radius: 12px;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .booksSelection{

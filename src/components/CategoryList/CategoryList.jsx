@@ -11,20 +11,20 @@ function CategoryList() {
                     <ul className={styles.categoryItems}>
                         <li className={styles.navLink}>
                             <span>&#128161;</span>
-                            <Link className={styles.textLink} to="">Загрузи свой подкаст</Link>
+                            <Link className={styles.textLinkCategory} to="">Загрузи свой подкаст</Link>
                         </li>
                         <li className={styles.navLink}>
                             <span>&#128076;</span>
-                            <Link className={styles.textLink} to="">Бесплатные книги</Link>{" "}
+                            <Link className={styles.textLinkCategory} to="/listFreebook">Бесплатные книги</Link>{" "}
                         </li>
                         
                         <li className={styles.navLink}>
                             <span>&#128153;</span>
-                            <Link className={styles.textLink} to="">Топ книг</Link>
+                            <Link className={styles.textLinkCategory} to="">Топ книг</Link>
                         </li>
                         <li className={styles.navLink}>
                             <span>&#127908;</span>
-                            <Link className={styles.textLink} to="">Топ аудиокниг</Link>
+                            <Link className={styles.textLinkCategory} to="">Топ аудиокниг</Link>
                         </li>
                     </ul>
                 </nav>

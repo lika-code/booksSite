@@ -2,14 +2,19 @@
     box-sizing: border-box;
 }
 .book {
-    width: 115px;
     font-size: 14px;
     cursor: pointer;
+    max-width: 135px;
 }
-
+.book:hover{
+    margin-right: 10px;
+}
+.blockImg{
+    transition: all 0.5s ease-out;
+}
 .blockImg:hover{
-  width: 130px;
-  height: 180px;
+  width: 150px;
+  height: 190px;
 }
 
 .book:first-child {
@@ -21,8 +26,9 @@
 }
 
 .blockImg {
-    width: 115px;
-    height: 176px;
+    width: 135px;
+    height: 180px;
+    margin-right: 10px;
 }
 
 .bookImg {

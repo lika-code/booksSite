@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {useLocation} from 'react-router-dom';
-import witcher from "../../assets/img/witcher.jpg";
 import styles from "../BookPage/style.module.css";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 
-function BookPage({}) {
+function BookPage() {
     const [crumbs, setCrumbs] = useState([
         "MyBook — Электронная библиотека",
         "Библиотека",
@@ -14,7 +13,6 @@ function BookPage({}) {
 
     const { state } = useLocation();
     const selected = (crumb) => {
-        console.log(crumb);
     };
 
     return (
@@ -59,7 +57,7 @@ function BookPage({}) {
                     <h3 className={styles.title}>Правообладатель</h3>
                     <p className={styles.rulesAuthor}>АСТ</p>
                     <p className={styles.numberOfBook}>149 книг</p>
-                    <butto className={styles.btnShare}>Поделиться</butto>
+                    <button className={styles.btnShare}>Поделиться</button>
                 </div>
             </div>
         </>

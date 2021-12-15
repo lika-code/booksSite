@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import BookPage from "../../pages/BookPage/BookPage";
 
 import styles from "../BetterSelections/style.module.css";
@@ -20,18 +19,16 @@ function BetterSelections({ items }) {
                 <div>
                     <p className={styles.selectDescription}>
                         Деловая и научно-популярная литература издательств
-                        «Манн, Иванов и Фербер», «Альпина Паблишер»,
-                        «Олимп-Бизнес» и других
                     </p>
                 </div>
                 <div className={styles.booksSelection}>
-                    {items.map((obj) => (
+                    {items.slice(1,8).map((obj) => (
                             <Item
-                                key={obj.key}
-                                id={obj.key}
-                                name={obj.name}
+                                key={obj.rank}
+                                id={obj.rank}
+                                name={obj.title}
                                 author={obj.author}
-                                img={obj.img}
+                                img={obj.book_image}
                             />
                     ))}
                 </div>
